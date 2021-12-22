@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include("./partials/head.ejs") %>
+	<body>
+		<%- include("./partials/nav.ejs") %>
+
+		<section id="collection" class="py-3">
+			<div class="container">
+				<!-- subtitle div here -->
+				<div class="title text-center">
+					<h2 class="position-relative d-inline-block"><%= title %></h2>
+				</div>
+				<!-- subtitle div end -->
+
+				<!-- products content here -->
+				<div class="row g-0">
+					<div
+						class="
+							d-flex
+							flex-wrap
+							justify-content-center
+							mt-3
+							filter-button-group">
+						<!-- product container here -->
+						<% if (productsDB.length > 0) { %> <% productsDB.map((item) => { %>
+						<% const { _id, name, img, price, qty } = item %>
+
+						<div class="col-md-4 col-lg-3 col-xl-2 p-1 feat">
+							<a href="/products/<%= _id %>" class="text-decoration-none">
+								<div class="collection-img position-relative card-img-top">
+									<img src=<%= img %> class="h-100 w-auto img-thumbnail" />
+								</div>
+								<div class="text-center text-muted card-body">
+									<h5 class="text-uppercase my-1 card-title"><%= name %></h5>
+									<h6 class="card-text">Price: $ <%= price %></h6>
+									<h6 class="card-text">Qty: <%= qty === 0? "Out of stock" : qty %></h6>
+								</div>
+							</a>
+						</div>
+
+						<% }) %> <% } %>
+
+						<!-- product container end -->
+					</div>
+				</div>
+
+				<!-- products content end -->
+			</div>
+		</section>
+		<!-- end of collection -->
+		<%- include("./partials/footer.ejs") %>
+	</body>
+</html>

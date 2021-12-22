@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include("./partials/head.ejs") %>
+	<body>
+		<%- include("./partials/nav.ejs") %>
+
+		<section id="collection" class="py-3">
+			<div class="container">
+				<!-- subtitle div here -->
+				<div class="title text-center">
+					<h2 class="position-relative d-inline-block"><%= title %></h2>
+				</div>
+				<!-- subtitle div end -->
+
+				<!-- form content here -->
+    <!-- Default form register -->
+<form action="/newitem" method="POST" class="text-center border border-light p-5">
+
+    <input type="text" id="name" name="name" class="form-control mb-4" placeholder="Product name">
+
+    <input type="text" id="img" name="img" class="form-control mb-4" placeholder="Product image url">
+
+     <input type="number" id="price" name="price" class="form-control mb-4" placeholder="Price">
+
+     <input type="number" id="qty" name="qty" class="form-control mb-4" placeholder="Stock quantity">
+
+     <textarea type="text" id="description" name="description" class="form-control mb-4" placeholder="Description"></textarea>
+
+
+  <button type="submit" class="btn btn-secondary btn-lg">Add New Product</button>
+</form>
+<!-- Default form register -->
+
+
+
+				<!-- form content end -->
+			</div>
+		</section>
+		<!-- end of collection -->
+		<%- include("./partials/footer.ejs") %>
+	</body>
+</html>

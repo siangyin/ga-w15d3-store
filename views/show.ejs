@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include("./partials/head.ejs") %>
+	<body>
+		<%- include("./partials/nav.ejs") %>
+
+		<section id="collection" class="py-3">
+			<div class="container">
+				<!-- subtitle div here -->
+				<div class="title text-center">
+					<h2 class="position-relative d-inline-block"><%= title %></h2>
+				</div>
+				<!-- subtitle div end -->
+
+				<!-- products content here -->
+				<div class="row g-0">
+					<div
+						class="
+							d-flex
+							flex-wrap
+							justify-content-center
+							mt-1
+							filter-button-group">
+						<!-- product container here -->
+					 
+						<% const { _id, name, img, price, qty,description } = productsDB %>
+      <div class="card mb-3 col-md-5">
+       <img src=<%= img %> class="img-thumbnail" alt="productimage">
+       <div class="card-body">
+        <h3 class="card-title"><%= name %></h3>
+        <h5 class="card-text"><%= description %></h5>
+        <h6 class="card-text">Price: $ <%= price %></h6>
+
+        <% if (qty > 0) { %>
+          <h6 class="card-text">Qty: <%= qty %></h6>
+          <% } else { %>
+           <h6 class="card-text">Qty: Out of Stock</h6>
+
+           <% } %>
+
+        
+        <div class="btn-group" role="group" aria-label="Basic example">
+         <a href="/products/<%= _id %>/editing">
+         <button type="button" class="btn btn-outline-secondary">EDIT</button></a>
+         <% if (qty > 0) { %>
+										<form
+            action="/products/<%=_id%>/buy?_method=PATCH"
+            method="POST"
+          >
+          <button type="submit" class="btn btn-outline-secondary">BUY</button>
+									</form>
+          <% } else { %>
+           <button type="button" class="btn btn-outline-secondary disabled">No Stock</button>
+           <% } %>
+         <form
+            action="/products/<%=_id%>?_method=DELETE"
+            method="POST"
+          >
+         <button type="submit" class="btn btn-outline-secondary">DELETE</button>
+									</form>
+        </div>
+
+        
+         
+       </div>
+      </div>
+
+				 
+
+						<!-- product container end -->
+					</div>
+				</div>
+
+				<!-- products content end -->
+			</div>
+		</section>
+		<!-- end of collection -->
+		<%- include("./partials/footer.ejs") %>
+	</body>
+</html>

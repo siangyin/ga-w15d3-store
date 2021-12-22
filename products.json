@@ -1,23 +1,46 @@
 [
 	{
-		"name": "Beans",
-		"description": "A small pile of beans. Buy more beans for a big pile of beans.",
-		"img": "https://cdn3.bigcommerce.com/s-a6pgxdjc7w/products/1075/images/967/416130__50605.1467418920.1280.1280.jpg?c=2",
-		"price": 5,
+		"name": "WH-1000XM3",
+		"description": "WH-1000XM3 Wireless Noise-Cancelling Headphones",
+		"img": "https://cdn.shopify.com/s/files/1/0397/7166/8635/products/WH1000XM3_02_800x.png?v=1624169716",
+		"price": 269,
+		"qty": 20
+	},
+	{
+		"name": "WH-1000XM4",
+		"description": "WH-1000XM4 Wireless Noise-Cancelling Headphones",
+		"img": "https://cdn.shopify.com/s/files/1/0397/7166/8635/products/WH1000XM4Black_800x.png?v=1615519640",
+		"price": 399,
 		"qty": 99
 	},
 	{
-		"name": "Bones",
-		"description": "It's just a bag of bones.",
-		"img": "http://bluelips.com/prod_images_large/bones1.jpg",
-		"price": 25,
+		"name": "WF-1000XM4",
+		"description": "WF-1000XM4 Wireless Noise Cancelling Headphones",
+		"img": "https://cdn.shopify.com/s/files/1/0397/7166/8635/products/WF-1000XM4_B_KeyVisual-Mid_800x.png?v=1623126381",
+		"price": 250,
 		"qty": 0
 	},
 	{
-		"name": "Bins",
-		"description": "A stack of colorful bins for your beans and bones.",
-		"img": "http://www.clipartbest.com/cliparts/9cz/rMM/9czrMMBcE.jpeg",
-		"price": 7000,
+		"name": "WF-1000XM3",
+		"description": "WF-1000XM3 Truly Wireless Noise-Cancelling Headphones",
+		"img": "https://cdn.shopify.com/s/files/1/0397/7166/8635/products/WF1000XM3_04_800x.png?v=1611928651",
+		"price": 70,
 		"qty": 1
+	},
+
+	{
+		"name": "WF-SP800N",
+		"description": "WF-SP800N Truly Wireless Noise-Cancelling Headphones for Sports",
+		"img": "https://cdn.shopify.com/s/files/1/0397/7166/8635/products/SP800ORANGE_600x.png?v=1593055259",
+		"price": 179,
+		"qty": 6
+	},
+
+	{
+		"name": "WF-XB700",
+		"description": "WF-XB700 Truly Wireless Headphones with EXTRA BASS",
+		"img": "https://cdn.shopify.com/s/files/1/0397/7166/8635/products/WF-XB700-BL_800x.png?v=1595927074",
+		"price": 149,
+		"qty": 3
 	}
 ]
