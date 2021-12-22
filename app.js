@@ -14,7 +14,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("./public"));
 app.use(express.json());
 app.use(methodOverride("_method"));
-// app.use("/api", products);
 
 app.get("/allproducts", (req, res) => {
 	res.redirect("/index");
@@ -56,7 +55,6 @@ app.post("/newitem", async (req, res) => {
 	}
 });
 
-// to be continue, editing update submit no response
 app.get("/products/:id/editing", async (req, res) => {
 	try {
 		let routeID = req.params.id;
@@ -67,7 +65,6 @@ app.get("/products/:id/editing", async (req, res) => {
 		console.log(err);
 	}
 });
-
 
 app.patch("/products/:id", async (req, res) => {
 	try {
