@@ -15,10 +15,13 @@ app.use(express.static("./public"));
 app.use(express.json());
 app.use(methodOverride("_method"));
 
-app.get("/allproducts", (req, res) => {
+app.get("/", (req, res) => {
 	res.redirect("/index");
 });
 
+app.get("/allproducts", (req, res) => {
+	res.redirect("/index");
+});
 
 // Routes
 app.get("/index", async (req, res) => {
