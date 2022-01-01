@@ -13,7 +13,7 @@
   
 ```
   
-Learning:
+## Learning:
   
 - seed data to mongodb
 - data structure
@@ -23,13 +23,18 @@ Learning:
 - delete item
 
 
-Web-app Screenshots
+## Web-app Screenshots
 
-<img width="964" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/main/refImg/home.png?raw=true">
+### Home 
+<img width="500" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/main/refImg/home.png?raw=true">
 
-<img width="964" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/main/refImg/viewandedit.png?raw=true">
 
-<img width="964" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/main/refImg/new.png?raw=true">
+### View/Edit/Delete Item
+<img width="500" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/main/refImg/viewandedit.png?raw=true">
+
+
+### Create New item
+<img width="500" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/main/refImg/new.png?raw=true">
 
 
   
