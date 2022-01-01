@@ -25,7 +25,11 @@ Learning:
 
 Web-app Screenshots
 
-<img width="964" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/master/refImg/home.png">
+<img width="964" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/main/refImg/home.png?raw=true">
+
+<img width="964" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/main/refImg/viewandedit.png?raw=true">
+
+<img width="964" alt="img" src="https://github.com/siangyin/ga-w15d3-store/blob/main/refImg/new.png?raw=true">
 
 
   
